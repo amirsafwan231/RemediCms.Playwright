@@ -1,0 +1,17 @@
+{
+  "name": "remedicms-playwright",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright automation tests for Remedi CMS",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^25.2.2",
+    "dotenv": "^17.2.4",
+    "typescript": "^5.9.3"
+  }
+}
