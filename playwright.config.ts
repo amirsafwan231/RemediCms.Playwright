@@ -7,15 +7,15 @@ export default defineConfig({
   expect: {
     timeout: 5_000,
   },
-  fullyParallel: true,
+  fullyParallel: false,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
-  workers: process.env.CI ? 1 : undefined,
+  workers: process.env.CI ? 1 : 1,
   reporter: [["html"], ["list"]],
   use: {
     baseURL: process.env.BASE_URL || "https://example.com",
     trace: "on-first-retry",
-    screenshot: "only-on-failure",
+    screenshot: "on",
     video: "retain-on-failure",
   },
   projects: [
