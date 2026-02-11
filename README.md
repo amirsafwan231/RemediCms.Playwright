@@ -40,6 +40,17 @@ LOGIN_USERNAME=your-username
 LOGIN_PASSWORD=your-password
 ```
 
+Role-based credentials for scalable auth fixtures:
+
+```bash
+ADMIN_USERNAME=
+ADMIN_PASSWORD=
+DOCTOR_USERNAME=
+DOCTOR_PASSWORD=
+STAFF_USERNAME=
+STAFF_PASSWORD=
+```
+
 Run only the login test:
 
 ```bash
